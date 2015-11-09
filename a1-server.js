@@ -21,7 +21,7 @@ var sum;
 // We will use a remote console logging service for debug messages
 // Define the service variable and connnect
 // You must edit <<<change_to_your_repo_name>>> to be your repository name
-var consolere = require('console-remote-client').connect('console.re','80','<<<change_to_your_repo_name>>>');
+var consolere = require('console-remote-client').connect('console.re','80','Keenaghan_Assignment_One');
 
 // Function to handle web browser requests and server responses
 function handleRequest(request, response){
@@ -35,7 +35,7 @@ function handleRequest(request, response){
     // and sum (global) variables
     console.re.log("Actual Sum returned by program is " + augend + "+" + addend + "= 9" );
     // 2. Add a debug message which ouputs the current values of the augend addend and sum variables
-    console.re.log("Actual Sum returned by program is " + augend + "+" + addend + "=" + sum);
+    console.re.log("The values of augend and addend are " + augend + "+" + addend + "=" + sum);
 }
 
 // Create an instance of a http server
